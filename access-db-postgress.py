@@ -6,6 +6,7 @@ getConnection = connection.cursor()
 getConnection.execute("select version()")
 
 data = getConnection.fetchone()
+
 print("Connection established to: ",data)
 
 connection.close()
