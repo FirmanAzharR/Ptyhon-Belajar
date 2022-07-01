@@ -2,6 +2,9 @@
 print("belajar pyton")
 #tipe data dictionary
 saya = {"nama":"Firman", "umur": 17}
+del saya['umur'] # hapus entri dengan key 'umur'
+#dict.clear()     # hapus semua entri di dict
+#del dict         # hapus dictionary yang sudah ada
 print(saya)
 #check type
 print(type(saya))
@@ -31,7 +34,23 @@ print(list)
 #delete list 
 del list[3]
 print(list)
-#addnew list
-list.append = 30
-print(list)
 
+#Contoh sederhana pembuatan tuple pada bahasa pemrograman python
+tup1 = ('fisika', 'kimia', 1993, 2017)
+tup2 = (1, 2, 3, 4, 5, 6, 7 )
+
+print ("tup1[0]: ", tup1[0])
+print ("tup2[1:5]: ", tup2[1:5])
+
+tup = ('fisika', 'kimia', 1993, 2017)
+print(tup)
+
+# hapus tuple dengan statement del
+del tup
+
+text = 'uhuy'
+def test(str):
+    print(str)
+    return
+
+test(text)
