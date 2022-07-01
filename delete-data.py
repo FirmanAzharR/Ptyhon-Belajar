@@ -4,11 +4,11 @@ connection = psycopg2.connect(database="pythondb", user='firman', password='alif
 
 getConnection = connection.cursor()
 
-sql = '''INSERT INTO EMPLOYEE(FIRST_NAME,LAST_NAME,AGE,SEX) VALUES('Firman','Azhar', 23, 'L')''';
+sql = '''DELETE FROM employee where age=23''';
 
 getConnection.execute(sql)
 
-print("Data inserted successfully !")
+print("delete data successfully !")
 
 connection.commit()
 connection.close()
